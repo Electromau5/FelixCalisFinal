@@ -1,0 +1,45 @@
+#pins {
+  margin-left: 150px;
+  margin-top: 25px;
+ 
+}
+
+.box {
+  margin: -3px;
+  width: 300px;
+  border-radius: 0;
+  background-color: #fff;
+  //display: inline-block;
+
+}
+
+.box img {
+  width: 100%;
+  //display: inline-block;
+  
+}
+
+.box img:hover {
+  cursor: pointer;
+}
+
+#editpins
+{
+  font-size: 18px;
+  font-family: GlacialIndifference-Regular;
+  font-weight: thin;
+  color: #000;
+  margin-right: 5px;
+  display: inline;
+}
+
+.fancybox-close 
+{
+  //background-image: url('cross.png');
+  margin-bottom: -10px;
+}
+
+.fancy-close:hover
+{
+  mouse: cursor;
+}
