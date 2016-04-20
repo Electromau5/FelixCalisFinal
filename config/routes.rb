@@ -5,6 +5,11 @@ Rails.application.routes.draw do
   get 'info/contacts'
 
   root 'pins#index'
+
+
+  resources :klicks
+
+  resources :runways
   
   resources :pins
 

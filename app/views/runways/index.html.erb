@@ -1,0 +1,17 @@
+<%= render 'layouts/sidebar3' %>
+<div class="container-fluid">
+<div id="pins" class="transitions-enabled">
+  <% @runway.each do |runway| %>
+   <%= link_to runway.image.url(:large), :class => 'fancybox', :rel => 'group' do %>
+    <div class="box">
+        <%= image_tag runway.image.url(:large) %>
+       <% if logged_in? && current_user.admin %>
+          <%= link_to 'EDIT', edit_runway_path(runway), :id => "editrunways" %>
+          <%= link_to 'DELETE', runway, method: :delete,  data: { confirm: 'Are you sure?' }, :id => "editrunways" %>
+        <% end %>
+    </div>
+    <% end %>
+  <% end %>
+</div>
+</div>
+

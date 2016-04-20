@@ -1,0 +1,17 @@
+<%= render 'layouts/sidebar2' %>
+<div class="container-fluid">
+<div id="pins" class="transitions-enabled">
+  <% @klick.each do |klick| %>
+   <%= link_to klick.image.url(:large), :class => 'fancybox', :rel => 'group' do %>
+    <div class="box">
+        <%= image_tag klick.image.url(:large) %>
+       <% if logged_in? && current_user.admin %>
+          <%= link_to 'EDIT', edit_klick_path(klick), :id => "editklicks" %>
+          <%= link_to 'DELETE', klick, method: :delete,  data: { confirm: 'Are you sure?' }, :id => "editklicks" %>
+        <% end %>
+    </div>
+    <% end %>
+  <% end %>
+</div>
+</div>
+
