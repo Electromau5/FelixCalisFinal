@@ -3,7 +3,7 @@ class KlicksController < ApplicationController
 	before_action :require_admin, except: [:index]
 
 	def index
-		@klick = Klick.all
+		@klick = Klick.all.order("created_at DESC")
 	end
 
 	def new
