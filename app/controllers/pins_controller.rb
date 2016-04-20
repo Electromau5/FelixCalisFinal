@@ -3,7 +3,7 @@ class PinsController < ApplicationController
 	before_action :require_admin, except: [:index]
 
 	def index
-		@pin = Pin.all.order("created_at DESC")
+		@pin = Pin.all.order("created_at ASC")
 	end
 
 	def new
