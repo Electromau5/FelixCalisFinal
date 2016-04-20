@@ -4,14 +4,14 @@ Rails.application.routes.draw do
 
   get 'info/contacts'
 
-  root 'pins#index'
+  root 'photos#index'
 
 
   resources :klicks
 
   resources :runways
   
-  resources :pins
+  resources :photos
 
   resources :users
 
