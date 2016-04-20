@@ -1,2 +1,52 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.thumbnail
+{
+  border-radius: 0;
+  margin-bottom: -5px;
+  border: 0px solid #666999;
+}
+.col-md-3
+{
+	padding: 6px 6px 6px 1px;
+}
+
+body
+{
+	background: #fff;
+}
+
+#logout
+{
+	float: right;
+	padding: 9px;
+	margin-right: 50px;
+	margin-top:-2%;
+	width: 7%;
+	text-align: center;
+	font-size: 15px;
+}
+
+#logout:hover 
+{
+	text-decoration: none;
+}
+
+.back
+{
+	color: #6b6b6b;
+	font-family:GlacialIndifference-Regular;
+
+}
+ .back:hover
+{
+	text-decoration: none;
+}
+
+
+
+
