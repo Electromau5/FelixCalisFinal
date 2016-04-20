@@ -15,5 +15,6 @@
 //= require bootstrap-sprockets
 //= require masonry/jquery.masonry
 //= require sidebar
+//= require fancybox
 //= require turbolinks
 //= require_tree .
